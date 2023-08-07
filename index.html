@@ -13,6 +13,7 @@
     <!-- Add more icons for different sizes if needed -->
     <meta charset="utf-8">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -44,8 +45,8 @@
       }
   
       button {
-        padding: 20px; /* Increase button padding for better tap interaction */
-        font-size: 24px; /* Increase button font size for better readability */
+        padding: 10px;
+        font-size: 18px;
         cursor: pointer;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -55,6 +56,17 @@
   
       button:hover {
         background-color: #e3e3e3;
+      }
+  
+      /* Media query for mobile devices */
+      @media (max-width: 480px) {
+        #calculator {
+          max-width: 200px; /* Adjust calculator size for mobile */
+        }
+  
+        button {
+          font-size: 16px; /* Decrease button font size for mobile */
+        }
       }
   
       .main-buttons {
