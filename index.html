@@ -13,66 +13,79 @@
     <!-- Add more icons for different sizes if needed -->
     <meta charset="utf-8">
     <meta name="apple-mobile-web-app-capable" content="yes">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-
-    h1 {
-      margin-bottom: 10px;
-    }
-
-    #calculator {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 10px;
-      max-width: 300px;
-      margin: 0 auto;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    #display {
-      grid-column: span 4;
-      padding: 10px;
-      font-size: 20px;
-      text-align: right;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      padding: 10px;
-      font-size: 18px;
-      cursor: pointer;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: #f7f7f7;
-    }
-
-    button:hover {
-      background-color: #e3e3e3;
-    }
-    .main-buttons {
-    background-color: #3498db; /* Light blue color for the 9 main numbers */
-    }
-
-    .main-buttons:hover {
-    background-color: #2980b9; /* Darker shade when hovered */
-    }
-
-    #equal-key-container button {
-      grid-column: span 1;
-      width: 100%;
-      background-color: #f2ff7e; /* Light blue color for the 9 main numbers */
-    }
-
-    #equal-key-container button:hover {
-      background-color: #e0e057; /* Darker shade when hovered */
-    }
-</style>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+  
+      h1 {
+        margin-bottom: 10px;
+      }
+  
+      #calculator {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+      #display {
+        grid-column: span 4;
+        padding: 10px;
+        font-size: 20px;
+        text-align: right;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+      button {
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+        color: black; /* Set button text color to black */
+      }
+  
+      button:hover {
+        background-color: #e3e3e3;
+      }
+  
+      /* Media query for mobile devices */
+      @media (max-width: 480px) {
+        #calculator {
+          max-width: 200px; /* Adjust calculator size for mobile */
+        }
+  
+        button {
+          font-size: 16px; /* Decrease button font size for mobile */
+        }
+      }
+  
+      .main-buttons {
+        background-color: #3498db; /* Light blue color for the 9 main numbers */
+      }
+  
+      .main-buttons:hover {
+        background-color: #2980b9; /* Darker shade when hovered */
+      }
+  
+      #equal-key-container button {
+        grid-column: span 1;
+        width: 100%;
+        background-color: #f2ff7e; /* Light blue color for the 9 main numbers */
+      }
+  
+      #equal-key-container button:hover {
+        background-color: #e0e057; /* Darker shade when hovered */
+      }
+    </style>
 </head>
 <body>
     <h1>Calculator</h1>
